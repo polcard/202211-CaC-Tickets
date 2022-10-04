@@ -3180,6 +3180,40 @@ textarea.form-control-lg {
   border-color: #212529;
 }
 
+/* ################## private button ////////*/
+.btn-live-green {
+  color: #fff;
+  background-color: #36b337;
+  border-color: #36b337;
+}
+.btn-live-green:hover {
+  color: #fff;
+  background-color: #387d39;
+  border-color: #1ed921;
+}
+.btn-check:focus + .btn-live-green, .btn-live-green:focus {
+  color: #fff;
+  background-color: #78ff7a;
+  border-color: #1ed921;
+  box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+}
+.btn-check:checked + .btn-live-green, .btn-check:active + .btn-live-green, .btn-live-green:active, .btn-live-green.active, .show > .btn-live-green.dropdown-toggle {
+  color: #fff;
+  background-color: #146c43;
+  border-color: #13653f;
+}
+.btn-check:checked + .btn-live-green:focus, .btn-check:active + .btn-live-green:focus, .btn-live-green:active:focus, .btn-live-green.active:focus, .show > .btn-live-green.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+}
+.btn-live-green:disabled, .btn-live-green.disabled {
+  color: #fff;
+  background-color: #1ed921;
+  border-color: #1ed921;
+}
+
+/* ################## private button ////////*/
+
+
 .btn-outline-primary {
   color: #0d6efd;
   border-color: #0d6efd;

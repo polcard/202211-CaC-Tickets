@@ -3,10 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.containerOwn10vh{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .containerOwn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .box-tarjetasTitle{
+    margin-top: 0.5vh;
+    /*background-color: skyblue;
+    border: 2px solid black;*/
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    line-height: 0%;
+ }
+ .box-tarjetasTitle p{
+    font-size:0.8em;
+    margin: 1.5vh auto 1.5vh auto;
+ }
+
+.content-tags{
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+
+}
+.yellow-tag{
+    border-color: rgb(214, 178, 16);
+    background-color:rgb(214, 178, 16);
+    border-radius: 5px;
+    padding:4px;
+    font-size:0.8em;
+    font-weight: bold;
+    color: #001228;
+}
+
+.magenta-tag{
+    border-color: #239dae;
+    background-color:#239dae;
+    border-radius: 5px;
+    padding:4px;
+    font-size:0.8em;
+    font-weight: bold;
+    color: #f6ffff;
+}
+
+.gray-tag{
+    border-color: #636b74;
+    background-color:#636b74;
+    border-radius: 5px;
+    padding:4px;
+    font-size:0.8em;
+    font-weight: bold;
+    color: #f6ffff;
+}
+
+.red-tag{
+    border-color: #d51a40;
+    background-color:#d51a40;
+    border-radius: 5px;
+    padding:4px;
+    font-size:0.8em;
+    font-weight: bold;
+    color: #f6ffff;
+}
+
+.spacingBetween{
+    margin: 0 1rem 2em 1rem;
+}
+
 .bgColorRosa{
     background-color: #f28f97;
 }
-.bgGris{
+.bg-Gris{
     background-color: #383737;
 }
 .ancho{
@@ -50,35 +127,9 @@
     display: flex;
     height:70vh;
 }
-.alto{
-    height:70vh;
-}
-.imagenIzq{
-    height:100%;
-    width:50%;
-    background-image: url("../assets/imagenes/honolulu.jpg");
-    background-size: cover;
-}
-.imagenIzqB{
-    height:100%;
- 
-    background-image: url("../assets/imagenes/honolulu.jpg");
-    background-size: cover;
-}
-.contenidoDerB{
-    height:100%;
-  
-    padding:2rem ;
-    background-color: #343333;
-    color:white;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+
 .contenidoDer{
-    height:100%;
-    width:50%;
+    height:auto;
     padding:2rem ;
     background-color: #343333;
     color:white;
@@ -87,13 +138,35 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.contenidoDer p{
+    font-size: small;
+}
+
+.formulario-contacto{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.font-big {
+    font-weight: 400; 
+    font-size:1.5rem;
+ }
+
+ .font-small {
+    font-size:0.9rem;
+    color: #6d7985;
+ }
+
 .sectionTarjetas{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .padreTarjetas{
     width:100%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,10 +206,23 @@
     width: 60%;
     text-align: right;
     color:white;
+    padding-right: 7rem;
+}
+
+.contenidoPrincipal p{
+    font-size:1.05em;
+}
+
+.text-footer{
+    font-size:0.9em;
+    color:white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /*celular*/
-@media screen and (max-width:768px){
+@media screen and (max-width:667px){
   .header__flex{
     flex-direction: column;
     
@@ -163,12 +249,21 @@
  }
  /*imagen principal*/
  .sectionPrincipal{
-    height: 60vh;
+    height: 100vh;
     justify-content:center;
  }
- .parrafoPrincipal{
-    line-height:1.5rem;
-    text-align: center;
+
+ .contenidoPrincipal{
+    width: 90%;
+    text-align: right;
+    color:white;
+    padding-right: 0.5rem;
+}
+
+.parrafo-central{
+    background-color: teal;
+    color: white;
+    font-weight: bold;
  }
 
  /*tarjetas*/
@@ -183,9 +278,27 @@
                 -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
                 -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
  }
- .tituloTarjetas{
-    margin-bottom:1rem;
- }
+
+.tituloTarjetas{
+    width: 120px;
+    height: 120px;
+    background-color: skyblue;
+    border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box div {
+    width: 100px;
+    height: 100px;
+  }
 
 }
 /*tablet*/

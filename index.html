@@ -18,7 +18,8 @@
      
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bgGris">
+
+            <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-Gris">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                     <div class="d-flex justify-content-center align-items-center text-white fw-normal">
@@ -26,25 +27,19 @@
                         Conf.Bs.As.
                     </div>
                  </a>
-                 
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="ancho d-flex justify-content-end">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-primary ">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                              <a class="nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
+                              <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
                             </li>
-                            <li class="nav-item"> <a  class="nav-link text-white" href="#">Los oradores</a></li>
-                            <li class="nav-item"> <a  class="nav-link text-white" href="#">El lugar y la Fecha</a></li>
-                            <li class="nav-item"> <a  class="nav-link text-white" href="#">Conviértete en Orador</a></li>
-                            <li class="nav-item"> <a  class="nav-link text-white" href="#">Comprar Tickets</a></li>
+                            <li class="nav-item"> <a  class="nav-link" href="#">Los oradores</a></li>
+                            <li class="nav-item"> <a  class="nav-link" href="#">El lugar y la Fecha</a></li>
+                            <li class="nav-item"> <a  class="nav-link" href="#">Conviértete en Orador</a></li>
+                            <li class="nav-item"> <a  class="nav-link text-success" href="#">Comprar Tickets</a></li>
                         </ul>
-
-                    </div>
-                   
-                   
                   </div>
                 </div>
             </nav>
@@ -54,229 +49,134 @@
         <main>
             <section class="sectionPrincipal">
                 <div class="contenidoPrincipal">
-                    <h1>Conferencia Bs.As.</h1>
-                    <p class="parrafoPrincipal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque facilis eaque provident sed id, deserunt quos ab autem blanditiis numquam quia laborum culpa expedita! Sed, molestiae vitae? Sed, veritatis doloremque.</p>
-                    <a href="./pages/contacto.html">Quiero ser orador</a>
-                    <a href="./pages/comprartickets.html">Comprar Tickets</a>
+                    <h1>Conf Bs As</h1>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nievel que tenemos para ti. Te esperamos!</p>
+                    <a class="btn btn-outline-light m-2" href="#" role="button">Quiero ser Orador</a>
+                    <a class="btn btn-live-green m-2" href="#" role="button">Comprar tickets</a>
                 </div>
                
             </section>
         
         </main>
+
         <section class="sectionTarjetas">
-            <div class="tituloTarjetas">
-                <h2>CONOCE</h2>
-                <h3>a los oradores</h3>
+            <div class="containerOwn10vh mt-2">
+                <div class="box-tarjetasTitle">
+                    <p>CONOCE A LOS</p>
+                    <h2>ORADORES</h2>
+                </div>
             </div>
-            <div class="padreTarjetas">
-                <div  class="tarjetas__flex">
-                    <div  class="tarjeta">
-                        <!--es una etiqueta contenedora y es una etiqueta comodin en bloque  height="400"-->
-                        <img class="tarjetaImagen" src="./assets/imagenes/steve.jpg" alt="imagen card" loading="lazy" width="300" >
-                        <div class="tarjetaContenido">
-                            <h3>Steve Jobs</h3>
-                            <div class="tarjetaParrafo">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ut dicta adipisci reiciendis at. Molestiae nobis eveniet provident qui, eligendi voluptatibus <br> alias voluptatum dolores, excepturi ipsum mollitia aspernatur consequatur maiores placeat.</p>
+
+            <section class="container mb-4">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card spacingBetween">
+                            <img src="./assets/imagenes/steve.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-tags">
+                                    <span class="yellow-tag" >JavaScript</span>
+                                    <span class="magenta-tag">React</span>
+                                </div>
+                                <h5 class="card-title">Steve Jobs</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum exercitationem laudantium error ullam veritatis. Dicta, fugit natus. Nesciunt eaque libero rem corporis eum fuga quis, architecto voluptatem recusandae nisi reprehenderit.</p>
+                            
                             </div>
-                          
-                            <a href="">leer Más</a>
-                        </div>
-                       
-                    </div>
-                    
-                    <div class="tarjeta">
-                        <!--es una etiqueta contenedora y es una etiqueta comodin en bloque-->
-                        <img  class="tarjetaImagen" src="./assets/imagenes/bill.jpg" alt="imagen card" loading="lazy" width="300">
-                        <div class="tarjetaContenido">
-                            <h3>Steve Jobs</h3>
-                            <div class="tarjetaParrafo">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ut dicta adipisci reiciendis at. Molestiae nobis eveniet provident qui, eligendi voluptatibus <br> alias voluptatum dolores, excepturi ipsum mollitia aspernatur consequatur maiores placeat.</p>
-                            </div>
-                          
-                            <a href="">leer Más</a>
                         </div>
                     </div>
-                  
-                    <div class="tarjeta">
-                        <!--es una etiqueta contenedora y es una etiqueta comodin en bloque-->
-                        <img  class="tarjetaImagen" src="./assets/imagenes/ada.jpeg" alt="imagen card" loading="lazy" width="300">
-                        <div class="tarjetaContenido">
-                            <h3>Steve Jobs</h3>
-                            <div class="tarjetaParrafo">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ut dicta adipisci reiciendis at. Molestiae nobis eveniet provident qui, eligendi voluptatibus <br> alias voluptatum dolores, excepturi ipsum mollitia aspernatur consequatur maiores placeat.</p>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card spacingBetween">
+                            <img src="./assets/imagenes/bill.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-tags">
+                                    <span class="yellow-tag" >JavaScript</span>
+                                    <span class="magenta-tag">React</span>
+                                </div>
+                                <h5 class="card-title">Bill Gates</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, a obcaecati hic odio laboriosam voluptatem doloribus voluptatum vel vitae nesciunt eligendi illo error totam pariatur impedit aliquid quia blanditiis! Quasi.</p>
+                            
                             </div>
-                          
-                            <a href="">leer Más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card spacingBetween">
+                            <img src="./assets/imagenes/ada.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-tags">
+                                    <span class="gray-tag" >Negocios</span>
+                                    <span class="red-tag">Startups</span>
+                                </div>
+                                <h5 class="card-title">Ada Lovelace</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, iure provident officia quam neque, obcaecati dolor dolorum porro doloribus accusantium voluptatem? Amet eos sunt laboriosam maiores dolorem iure facere ipsam!</p>
+                            
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-          
-           
-        </section>
-        <!--tarjetas de bootstrap-->
-        <section class="container">
-            <div class="card-group">
-                <div class="card">
-                  <img src="./assets/imagenes/steve.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Steve</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                   
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./assets/imagenes/bill.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Gate</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                   
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./assets/imagenes/ada.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Ada</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  
-                  </div>
-                </div>
-            </div>
+            </section>
 
         </section>
-        <!-- <section class="sectionDividida">
-            <div class="imagenIzq">
-
-            </div>
-            
-            <div class="contenidoDer">
-                <h3>Bs.As. Octubre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facere quos quia porro enim obcaecati dolore amet debitis, nihil possimus iusto alias! Nisi quasi, unde aspernatur debitis natus inventore blanditiis.</p>
-                <a href="">Conoce Más</a>
-
-            </div>
-        </section> -->
-        <section class="container-fluid">
-            <div class="row alto">
-               <div class="col-sm-12 col-xl-6 imagenIzqB h-50">
-
-               </div>
-               <div class="col-sm-12 col-xl-6 contenidoDerB d-flex flex-direction-column align-items-start">
-                    <h3>Bs.As. Octubre</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facere quos quia porro enim obcaecati dolore amet debitis, nihil possimus iusto alias! Nisi quasi, unde aspernatur debitis natus inventore blanditiis.</p>
-                    <a href="">Conoce Más</a>
-               </div>
-            </div>
-
-        </section>
-       
-       
-       <section>
-        <!-- Clase del miercoles, formulario (Ver enlaces internos!!!!)-->
-        <table>
-            <thead>
-                <tr>
-                    <th>Orador</th>
-                    <th>Día</th>
-                    <th>Horario</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Steve Jobs</td>
-                    <td>Lun. Y Mie.</td>
-                    <td>18:30hs a 20:00hs</td>
-                </tr>
-                <tr>
-                    <td>Bill Gates</td>
-                    <td>Mart. Y Juev.</td>
-                    <td>18:30hs a 20:00hs</td>
-                </tr>
-                <tr>
-                    <td>Ada Lovelace</td>
-                    <td>Lun. Y Mie.</td>
-                    <td>10:00hs a 11:30hs</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3"> <a href="">Sacar Entradas</a> </td>
-                </tr>
-            </tfoot>
-           
-           
-        </table>
-       </section>
-       <br><br>
-       <section>
-         <form action="">
-            <div>
-                <input type="text" placeholder="Nombre" >
-                <input type="text" placeholder="Apellido">
-            </div>
-            <div>
-                <label for="">Email</label>
-                <input type="email">
-            </div>
-            <div>
-                <label for="">Ingrese Contraseña</label>
-                <input type="password" required>
-            </div>
-           
-            <div>
-              <textarea name="" id="" cols="50" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
-            </div>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-             <div>
-                <p>indique su provincia</p>
-                <br>
-                <select >
-                    <option value="">Salta</option>
-                    <option value="">Entre Rios</option>
-                    <option value="">Santa Fe</option>
-                    <option value="">Rio Negro</option>
-                    <option value="">Cordoba</option>
-                </select>
-             </div>
-              <div>
-               <p>Terminos y Condiciones</p> 
-               <input type="checkbox" name="terminos">
-              </div>
-             <br>
-             <div>
-                <input type="submit" value="Enviar Formulario">
-                <input type="reset" value="Limpiar">
-             </div>
-           
-
-
-         </form>
-       </section>
-      <section> 
-        <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Nombre" >
-            <input type="text" class="form-control" placeholder="Apellido">
-            
-          </div>
-          <div class="mb-3">
-           
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
-          </div>
-      </section>
-      
-       <footer class="bg-primary">
-        <div class="container">
+        
+        <section class="container-fluid mb-2">
             <div class="row">
-                <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a></div>
-                <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Contactanós</a> </div>
-                <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Prensa</a> </div>
-                <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Conferencias</a> </div>
-                <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Terminos Y condiciones</a> </div>
-                <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Privacidad</a> </div>
-                <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Estudiantes</a> </div>
+               <div class="col-md-6 col-sm-12">
+                    <img src="./assets/imagenes/honolulu.jpg" class="img-fluid" alt="Imagen de Ciudad de Honolulu" height="auto" loading="lazy">
+               </div>
+               <div class="col-md-6 col-sm-12 contenidoDer">
+                    <h3>Bs As - Octubre</h3>
+                    <p> Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km&#178; de superficie).</p>
+                    <a class="btn btn-outline-light" href="#" role="button">Conocé más</a>
+               </div>
+            </div>
+        </section>
+       
+       
+       <section class="formulario-contacto">
+        <div class="containerOwn10vh">
+            <div class="box-tarjetasTitle">
+                <p>CONVIÉRTETE EN UN</p>
+                <h2>ORADOR</h2>
+
             </div>
         </div>
-          
+
+        <div class="container">
+            <p class="fs-5 text-center">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+            <div class="row">
+                <div class="column">
+                    <form class="row containerOwn">
+                        <div class="col-md-4 col-sm-12 mb-4">
+                          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-4">
+                          <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                        </div>
+                        <div class="col-md-8 col-sm-12 mb-4">
+                            <textarea class="form-control font-big" rows="3" placeholder="Sobre qué quieres hablar?" id="sobreque"></textarea>
+                            <label class="font-small" for="floatingTextarea">Recuerda incluir un título para tu charla</label>
+                        </div>
+                        <div class="col-md-8 col-sm-12 mb-4">
+                            <a class="btn btn-live-green w-100" href="#" role="button">Enviar</a>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+       <footer class="bg-primary">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center text-footer">
+                <div class="col-md-1"> <a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a></div>
+                <div class="col-md-1"> <a class="text-white text-decoration-none" href="">Contáctanos</a> </div>
+                <div class="col-md-1"> <a class="text-white text-decoration-none" href="">Prensa</a> </div>
+                <div class="col-md-1"> <a class="text-white text-decoration-none" href="">Conferencias</a> </div>
+                <div class="col-md-1"> <a class="text-white text-decoration-none" href="">Términos y condiciones</a> </div>
+                <div class="col-md-1"> <a class="text-white text-decoration-none" href="">Privacidad</a> </div>
+                <div class="col-md-1"> <a class="text-white text-decoration-none" href="">Estudiantes</a> </div>
+            </div>
+        </div>
+
        </footer>
      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
