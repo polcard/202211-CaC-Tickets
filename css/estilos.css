@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+
+.ancla::before {       
+    display: block;       
+    content: " ";       
+    margin-top: -83px;       
+    height: 83px;       
+  }
+
 .containerOwn10vh{
     height: 8vh;
     display: flex;
@@ -16,6 +24,26 @@
     justify-content: center;
     align-items: center;
  }
+
+.ba1{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1.jpg");
+    height:100vh;
+    width: 100%;
+}
+.ba2{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba2.jpg");
+    height:100vh;
+    width: 100%;
+}
+.ba3{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba3.jpg");
+    height:100vh;
+    width: 100%;
+}
+
+.sobreResto{
+    z-index: 1100;
+}
 
  .box-tarjetasTitle{
     margin-top: 0.5vh;
@@ -122,11 +150,7 @@
 .imagenMain{
     width:100%;
 }
-/*pantalla divida*/
-.sectionDividida{
-    display: flex;
-    height:70vh;
-}
+
 
 .contenidoDer{
     height:auto;
@@ -141,6 +165,11 @@
 
 .contenidoDer p{
     font-size: small;
+}
+
+.derechaCont{
+    position: absolute;
+    margin: 10rem 7rem auto auto;
 }
 
 .formulario-contacto{
@@ -158,12 +187,7 @@
     color: #6d7985;
  }
 
-.sectionTarjetas{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .padreTarjetas{
     width:100%;
     position: relative;
@@ -195,7 +219,7 @@
     width:80%;
 }
 .sectionPrincipal{
-    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1.jpg");
+    /*background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1.jpg");*/
     height:100vh;
     width: 100%;
     display: flex;
@@ -209,6 +233,28 @@
     padding-right: 7rem;
 }
 
+.contenedor{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-color: blue;
+
+  }
+
+  .box1{
+    width:100%;
+  }
+
+  .box2{
+    position: absolute;
+    top: 50vh;
+    right: 7rem;
+    width: 60%;
+    text-align: right;
+    color:white;
+    padding-right: 1rem;
+  }
+
 .contenidoPrincipal p{
     font-size:1.05em;
 }
@@ -220,6 +266,16 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+.bgFooter{
+    background-color: #1f4962;
+}
+
+.bd-placeholder-img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 
 /*celular*/
 @media screen and (max-width:667px){
@@ -252,13 +308,6 @@
     height: 100vh;
     justify-content:center;
  }
-
- .contenidoPrincipal{
-    width: 90%;
-    text-align: right;
-    color:white;
-    padding-right: 0.5rem;
-}
 
 .parrafo-central{
     background-color: teal;
@@ -300,6 +349,16 @@
     height: 100px;
   }
 
+/*
+  .contenidoPrincipal{
+    width: 70%;
+    text-align: right;
+    color:white;
+    padding-right: 0.5rem;
+    font-size: 0.8em;
+}
+*/
+
 }
 /*tablet*/
 @media screen and (min-width:769px) and (max-width:1024px){
@@ -316,9 +375,23 @@
         justify-content:space-between;
     }
 
+
+/*
+    .contenidoPrincipal{
+        width: 70%;
+        text-align: right;
+        color:white;
+        padding-right: 0.5rem;
+    }
+*/
+
 }
 
 /*tamaño destock*/
 @media screen and (min-width:1025px){
 
 }
+
+/* Carousel */
+
+
