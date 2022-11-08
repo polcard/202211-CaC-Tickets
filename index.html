@@ -9,8 +9,6 @@
         
         <title>CABA - Conf Bs As (Proyecto)</title>
 
-        <link rel="shortcut icon" href="favicon.ico">
-
         <!-- Bootstrap CSS -->       
         <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
         <link rel="stylesheet" href="./css/estilos.css" />
@@ -39,7 +37,7 @@
                             <li class="nav-item"> <a  class="nav-link" href="#oradores" >Los oradores</a></li>
                             <li class="nav-item"> <a  class="nav-link" href="#lugaryfecha">El lugar y la Fecha</a></li>
                             <li class="nav-item"> <a  class="nav-link" href="#convierte_orador">Conviértete en Orador</a></li>
-                            <li class="nav-item"> <a  class="nav-link text-success" href="#">Comprar Tickets</a></li>
+                            <li class="nav-item"> <a  class="nav-link text-success" href="#comprar_tickets">Comprar Tickets</a></li>
                         </ul>
                   </div>
                 </div>
@@ -178,19 +176,126 @@
                     <div class="column">
                         <form class="row containerOwn">
                             <div class="col-md-4 col-sm-12 mb-4">
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            <input type="text" class="form-control" id="nombreOrador" placeholder="Nombre">
                             </div>
                             <div class="col-md-4 col-sm-12 mb-4">
-                            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                            <input type="text" class="form-control" id="apellidoOrador" placeholder="Apellido">
                             </div>
                             <div class="col-md-8 col-sm-12 mb-4">
-                                <textarea class="form-control font-big" rows="3" placeholder="Sobre qué quieres hablar?" id="sobreque"></textarea>
+                                <textarea class="form-control font-big" rows="3" placeholder="Sobre qué quieres hablar?" id="sobrequeOrador"></textarea>
                                 <label class="font-small" for="floatingTextarea">Recuerda incluir un título para tu charla</label>
                             </div>
                             <div class="col-md-8 col-sm-12 mb-4">
                                 <a class="btn btn-live-green w-100" href="#" role="button">Enviar</a>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ancla" id="comprar_tickets">
+        <div class="formulario-contacto">
+
+            <div class="container ">
+                <div class="row  text-center d-flex justify-content-center">
+                    <div class="col-md-8 col-sm-12 mb-4">
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card border-primary">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Estudiante</h5>
+                                        <p class="card-text">Tienen un descuento</p>
+                                        <p class="card-text fw-bold">80%</p>
+                                        <p class="font-small">* presentar documentaci&oacute;n</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-success">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Trainee</h5>
+                                        <p class="card-text">Tienen un descuento</p>
+                                        <p class="card-text fw-bold">50%</p>
+                                        <p class="font-small">* presentar documentaci&oacute;n</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card border-warning">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Junior</h5>
+                                        <p class="card-text">Tienen un descuento</p>
+                                        <p class="card-text fw-bold">15%</p>
+                                        <p class="font-small">* presentar documentaci&oacute;n</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="font-small mt-2">VENTA</p>
+                                <h2>VALOR DE TICKET $200</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="form-control" id="nombreTicket" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="form-control" id="apellidoTicket" placeholder="Apellido">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 mb-4">
+                                            <input type="email" class="form-control" id="emailTicket" placeholder="Correo Electrónico">
+                                        </div>
+                                    </div>
+                                    <div class="row text-start">
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                            <label for="cantidadTicket" class="form-label">Cantidad</label>
+                                            <input type="number" id="cantidadTicket" class="form-control" placeholder="Cantidad">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                            <label for="categoriaTicket" class="form-label">Categoria</label>
+                                            <select name="" class="form-control" id="categoriaTicket">
+                                                <option value="">Seleccione Categor&iacute;a</option>
+                                                <option value="1">Estudiante</option>
+                                                <option value="2">Trainee</option>
+                                                <option value="3">Junior</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row text-start">
+                                        <div class="col-md-12 col-sm-12 mb-4">
+                                            <div class="bg-info bg-gradient"><p class="m-3 p-3 fw-bold fs-5">Total a Pagar: $ <span id="totalAPagar"></span> </p></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                            <btn class="btn btn-primary w-100" role="button" id="botonBorrar">Limpiar Campos</btn>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                            <btn class="btn btn-live-green w-100" role="button" id="botonResumen">Resumen</btn>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -214,5 +319,6 @@
        </footer>
      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="./assets/js/bootstrap.bundle.min.js"></script>
+     <script src="./assets/js/funciones.js"></script>
     </body>
 </html>
